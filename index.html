@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Búsqueda general</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Directorio SIFME</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="web/css/bootstrap-theme.css">
+      <link rel="stylesheet" href="web/css/materialize.min.css" media="screen,projection">
+      <link rel="stylesheet" href="web/css/style.css">
+      <link rel="stylesheet" href="web/css/scrollbar.css">
+      <link rel="stylesheet" href="web/css/main.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="red">
+        <div class="nav-wrapper container">
+              <a id="logo-container" href="#" class="brand-logo">SIFME</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Busqueda general</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li>Busqueda general</li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id="main">
+
+    <!-- Sidebar -->
+      <aside id="left-sidebar-nav">
+        <ul style="width: 240px;" id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y">
+          <li class="user-details red darken-2">
+            <div class="row">
+              <div class="col col s4 m4 l4">
+                <i class="medium material-icons white-text">perm_identity</i>
+              </div>
+              <div class="col col s8 m8 l8">
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Jose Luis Pro<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <p class="user-roal">Administrador</p>
+              </div>
+            </div>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="mdi-action-search"></i> Busqueda general</a>
+          </li>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">add</i> Agregar usuario</a>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">library_add</i> Agregar rol</a>
+          </li>
+          </li>
+          <li class="bold"><a href="{{ urlFor('admin_all_users') }}" class="waves-effect waves-red"><i class="large material-icons">group_work</i> Modificar permisos</a>
+          </li>
+          <li class="bold"><a href="{{ urlFor('admin_all_users') }}" class="waves-effect waves-red"><i class="large material-icons">explicit</i> Exportar datos</a>
+          </li>
+          <li class="bold"><a href="logout.html" class="waves-effect waves-red"><i class="mdi-hardware-keyboard-tab"></i> Cerrar sesión</a>
+          </li>
+                   
+          <li class="li-hover"><div class="divider"></div></li>
+
+          <!-- Custom scrollbar -->
+          <div style="left: 0px; bottom: 3px;" class="ps-scrollbar-x-rail"><div style="left: 0px; width: 0px;" class="ps-scrollbar-x"></div></div><div style="top: 0px; height: 667px; right: 3px;" class="ps-scrollbar-y-rail"><div style="top: 0px; height: 401px;" class="ps-scrollbar-y"></div></div>
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only red ><i class="mdi-navigation-menu"></i></a>
+      </aside>
+      <div class="container">
+        <div class="row">
+          <div class="header-search-wrapper hide-on-med-and-down">
+            <i class="mdi-action-search active"></i>
+            <input name="Search" class="header-search-input z-depth-2" placeholder="Busqueda" type="text">
+          </div>
+          <div class="col s9">
+            <table>
+              <thead>
+                <tr>
+                    <th data-field="id">Name</th>
+                    <th data-field="name">Item Name</th>
+                    <th data-field="price">Item Price</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="web/js/scrollbar.min.js"></script>
+  <script src="web/js/plugins.js"></script>
+
+  <!-- jQuery && Materialize JavaScript -->
+  <script>
+    $(document).ready(function(){ 
+      $(".sidebar-collapse").sideNav();
+    });
+  </script>
+
+</body>
 </html>
