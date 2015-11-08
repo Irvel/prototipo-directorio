@@ -17,6 +17,12 @@ body{
   margin-top: 2%;
 }
 
+
+[type="checkbox"].filled-in:checked+label:after {
+  border: 2px solid #D32F2F;
+  background-color: #D32F2F;
+}
+
 #barra_busqueda {
   margin-top: 2%;
 }
