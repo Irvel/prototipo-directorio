@@ -49,7 +49,7 @@
               </div>
             </div>
           </li>
-          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="mdi-action-search"></i> Busqueda general</a>
+          <li class="bold active"><a href="index.html" class="waves-effect waves-red"><i class="mdi-action-search"></i> Busqueda general</a>
           </li>
           </li>
           <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">add</i> Agregar usuario</a>
@@ -74,9 +74,17 @@
       <div class="container">
 
         <div class="row">
-          <div class="header-search-wrapper card" id="barra_busqueda">
+          <div class="col s6 header-search-wrapper card" id="barra_busqueda">
             <i class="mdi-action-search active"></i>
             <input name="Search" class="header-search-input z-depth-3" placeholder="Busqueda" type="text">
+          </div>
+          <div class="input-field col s3">
+            <input placeholder="Filtar por nombre(s)" id="first_name" type="text" class="validate">
+            <label for="filtrar-nombres">Filtar por nombre(s)</label>
+          </div>
+          <div class="input-field col s3">
+            <input placeholder="Filtar por apellido(s)" id="filtrar-apellidos" type="text" class="validate">
+            <label for="first_name">Filtar por apellido(s)</label>
           </div>
 
           <div class="col s12 card" id="tabla-usuarios">
