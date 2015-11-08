@@ -20,11 +20,11 @@
         <div class="nav-wrapper container">
               <a id="logo-container" href="#" class="brand-logo">SIFME</a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="#">Modificar permisos</a></li>
+                <li><a href="#">Nuevo rol</a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
-                <li>Modificar permisos</li>
+                <li>Nuevo rol</li>
               </ul>
               
             </div>
@@ -57,9 +57,9 @@
           <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">library_add</i> Agregar rol</a>
           </li>
           </li>
-          <li class="bold active"><a href="permisos.html" class="waves-effect waves-red"><i class="large material-icons">group_work</i> Modificar permisos</a>
+          <li class="bold"><a href="permisos.html" class="waves-effect waves-red"><i class="large material-icons">group_work</i> Modificar permisos</a>
           </li>
-          <li class="bold"><a href="nuevo-rol.html" class="waves-effect waves-red"><i class="large material-icons">assignment_ind</i> Nuevo rol</a>
+          <li class="bold active"><a href="nuevo-rol.html" class="waves-effect waves-red"><i class="large material-icons">assignment_ind</i> Nuevo rol</a>
           </li>
           <li class="bold"><a href="{{ urlFor('admin_all_users') }}" class="waves-effect waves-red"><i class="large material-icons">explicit</i> Exportar datos</a>
           </li>
@@ -75,34 +75,16 @@
       </aside>
 
       <div class="container">
-        <div class="row">
-          <div class="col s3 header-search-wrapper superior">
-            <h5 class="center">Seleccionar rol</h5>
-          </div>
-          <div class="col s3 header-search-wrapper superior">
-            <select>
-                  <option value="" disabled selected>Administrador</option>
-                  <option value="1">Coordinador general</option>
-                  <option value="2">Coordinador de zona</option>
-                  <option value="3">Líder de grupo</option>
-                  <option value="4">Miembro</option>
-                </select>
-                
-          </div>
 
         </div>
-        <div class="row">
+        <div class="row ">
           <div class="col s3 header-search-wrapper superior">
-            <h5 class="center">Nombre</h5>
+            <h5 class="center ">Nombre</h5>
           </div>
-          <div class="input-field col s3">
-            <input placeholder="" id="first_name" type="text" class="validate">
-            <label for="first_name"></label>
+          <div class="input-field col s3 superior">
+            <input placeholder="" id="nombre-nuevo" type="text" class="validate">
+            <label for="nombre-nuevo">Rol nuevo</label>
           </div>
-          <div class="col s3 header-search-wrapper superior">
-            <a class="waves-effect waves-light btn red darken-2">Editar</a>
-          </div>
-
         </div>
         <div class="row">
                <div class="col s12 m3">
