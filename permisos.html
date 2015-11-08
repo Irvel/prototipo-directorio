@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Directorio SIFME</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="web/css/bootstrap-theme.css">
+      <link rel="stylesheet" href="web/css/materialize.min.css" media="screen,projection">
+      <link rel="stylesheet" href="web/css/style.css">
+      <link rel="stylesheet" href="web/css/scrollbar.css">
+      <link rel="stylesheet" href="web/css/main.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="red">
+        <div class="nav-wrapper container">
+              <a id="logo-container" href="#" class="brand-logo">SIFME</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Busqueda general</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li>Busqueda general</li>
+              </ul>
+              
+            </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id="main">
+
+    <!-- Sidebar -->
+      <aside id="left-sidebar-nav">
+        <ul style="width: 240px;" id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y">
+          <li class="user-details red darken-2">
+            <div class="row">
+              <div class="col col s4 m4 l4">
+                <i class="medium material-icons white-text">perm_identity</i>
+              </div>
+              <div class="col col s8 m8 l8">
+                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Jose Luis Pro<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <p class="user-roal">Administrador</p>
+              </div>
+            </div>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="mdi-action-search"></i> Busqueda general</a>
+          </li>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">add</i> Agregar usuario</a>
+          </li>
+          <li class="bold"><a href="index.html" class="waves-effect waves-red"><i class="material-icons">library_add</i> Agregar rol</a>
+          </li>
+          </li>
+          <li class="bold active"><a href="permisos.html" class="waves-effect waves-red"><i class="large material-icons">group_work</i> Modificar permisos</a>
+          </li>
+          <li class="bold"><a href="{{ urlFor('admin_all_users') }}" class="waves-effect waves-red"><i class="large material-icons">explicit</i> Exportar datos</a>
+          </li>
+          <li class="bold"><a href="logout.html" class="waves-effect waves-red"><i class="mdi-hardware-keyboard-tab"></i> Cerrar sesión</a>
+          </li>
+                   
+          <li class="li-hover"><div class="divider"></div></li>
+
+          <!-- Custom scrollbar -->
+          <div style="left: 0px; bottom: 3px;" class="ps-scrollbar-x-rail"><div style="left: 0px; width: 0px;" class="ps-scrollbar-x"></div></div><div style="top: 0px; height: 667px; right: 3px;" class="ps-scrollbar-y-rail"><div style="top: 0px; height: 401px;" class="ps-scrollbar-y"></div></div>
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only red"><i class="mdi-navigation-menu"></i></a>
+      </aside>
+
+      <div class="container">
+        <div class="row">
+          <div class="col s3 header-search-wrapper superior">
+            <h5 class="center">Seleccionar rol</h5>
+          </div>
+          <div class="col s3 header-search-wrapper superior">
+            <select>
+                  <option value="" disabled selected>Administrador</option>
+                  <option value="1">Líder</option>
+                  <option value="2">Coordinador</option>
+                  <option value="3">Líder de sector</option>
+                  <option value="4">Miembro</option>
+                </select>
+                
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col s3 header-search-wrapper superior">
+            <h5 class="center">Nombre</h5>
+          </div>
+          <div class="input-field col s3">
+            <input placeholder="" id="first_name" type="text" class="validate">
+            <label for="first_name"></label>
+          </div>
+          <div class="col s3 header-search-wrapper superior">
+            <a class="waves-effect waves-light btn red darken-2">Editar</a>
+          </div>
+
+        </div>
+        <div class="row">
+               <div class="col s12 m4">
+                 <div class="icon-block">
+                   <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                   <h5 class="center">Avisos de ocasión</h5>
+                   <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur molestias aut alias, autem labore maiores nisi quae. Consectetur molestiae laborum debitis ut ipsum aliquam dolorem, fuga perspiciatis, officia blanditiis.</p>
+                 </div>
+               </div>
+
+               <div class="col s12 m4">
+                 <div class="icon-block">
+                   <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                   <h5 class="center">Solicitudes de apoyo</h5>
+
+                   <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus provident quisquam unde, recusandae nisi illo necessitatibus dicta natus expedita aperiam itaque a distinctio est, molestiae tempora, dolor laborum quae consequuntur?</p>
+                 </div>
+               </div>
+
+               <div class="col s12 m4">
+                 <div class="icon-block">
+                   <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                   <h5 class="center">Cursor</h5>
+
+                   <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptas soluta numquam earum neque a perferendis perspiciatis iusto iure laborum et quae facere odio harum eveniet ipsum veniam, voluptates quibusdam.</p>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+      </div>
+    </div>
+  
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="web/js/scrollbar.min.js"></script>
+  <script src="web/js/plugins.js"></script>
+
+  <!-- jQuery && Materialize JavaScript -->
+  <script>
+    $(document).ready(function(){ 
+      $(".sidebar-collapse").sideNav();
+    });
+  </script>
+
+</body>
+</html>

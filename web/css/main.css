@@ -13,6 +13,10 @@ body{
   display: table;
   clear: both; }
 
+.container .row .superior{
+  margin-top: 2%;
+}
+
 #barra_busqueda {
   margin-top: 2%;
 }
