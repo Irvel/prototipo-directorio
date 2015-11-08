@@ -44,3 +44,11 @@ body{
 td a{
     display: block;
 }
+
+.tabs .tab a {
+  color: #D32F2F;
+}
+
+#introduction{
+  padding: 3%;
+}
